@@ -1,0 +1,61 @@
+# Sample YAML document demonstrating various data types and structures
+
+# Scalar values
+name: John Doe
+age: 30
+is_student: false
+height: 6.2
+birth_date: 1994-05-15
+favorite_color: blue
+
+# Lists
+fruits:
+  - apple
+  - banana
+  - orange
+
+colors:
+  - red
+  - green
+  - yellow
+
+# Nested structures
+person:
+  name: Alice Smith
+  age: 25
+  address:
+    street: 456 Oak Avenue
+    city: Springfield
+    country: USA
+  hobbies:
+    - reading
+    - hiking
+    - painting
+
+# Multi-line strings
+description: |
+  This is a multi-line string in YAML.
+  It allows you to write paragraphs of text
+  without worrying about indentation.
+
+# Mapping of mappings
+preferences:
+  music:
+    rock: true
+    jazz: false
+    pop: true
+  movies:
+    action: true
+    comedy: true
+    drama: false
+
+# Null value
+website: null
+
+# Anchors and aliases (referencing other parts of the YAML document)
+aliased_address: &home_address
+  street: 123 Main Street
+  city: Anytown
+  country: USA
+
+another_address: *home_address
